@@ -42,16 +42,18 @@ export default function Character({name, gender, birthYear, height , eye_color})
  
   return (
     <MainCharacter expanded={expanded} onClick={() => setExpanded(!expanded)}>
+        <h2>{name}</h2>
     <span className="arrow-down">
     {expanded  ? `${String.fromCharCode(8963) }`
     : `${String.fromCharCode(8964)}`}
          
       </span>
-      <p>Name: {name}</p>
       <p>Birth-Year: {birthYear}</p>
       <p>Gender: {gender}</p>
       <p>Height: {height}</p>
       <p>Eye-Color: {eye_color}</p>
     </MainCharacter>
+    
   );
+  
 }

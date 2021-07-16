@@ -43,6 +43,7 @@ import Character from "./components/Character";
         mass={results.mass}
         eye_color={results.eye_color}
         ></Character>
+        
             );
           })}
         </div>
