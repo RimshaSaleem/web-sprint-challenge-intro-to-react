@@ -34,12 +34,12 @@ const MainCharacter = styled.div`
   cursor: pointer;
   margin: 0 auto;
   width: 70%;
-  max-width: 70rem;
+  max-width: 65rem;
 `;
 
-export default function Character() {
+export default function Character({name, gender, birthYear, height , eye_color}) {
   const [expanded, setExpanded] = useState(false);
-
+ 
   return (
     <MainCharacter expanded={expanded} onClick={() => setExpanded(!expanded)}>
     <span className="arrow-down">
