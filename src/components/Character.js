@@ -47,6 +47,7 @@ export default function Character({name, gender, birthYear, height , eye_color})
     : `${String.fromCharCode(8964)}`}
          
       </span>
+      <p>Name: {name}</p>
       <p>Birth-Year: {birthYear}</p>
       <p>Gender: {gender}</p>
       <p>Height: {height}</p>
