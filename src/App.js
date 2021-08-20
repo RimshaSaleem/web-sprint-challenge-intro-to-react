@@ -30,7 +30,7 @@ import Character from "./components/Character";
       }, []);
     
       return (
-        <div className="App">
+        <div className="Apps">
         <h1 className="Header">STAR WARS CHARACTERS!</h1>
         {result.map((results) => {
         return (
@@ -40,7 +40,7 @@ import Character from "./components/Character";
         gender={results.gender}
         birthYear={results.birth_year}
         height={results.height}
-        mass={results.mass}
+        // mass={results.mass}
         eye_color={results.eye_color}
         ></Character>
         
